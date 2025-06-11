@@ -70,7 +70,7 @@ const InboxTodo = () => {
             )
             }
             <div className={'flex flex-col justify-center items-center gap-2 mt-2'}>
-                {todos.map(todo => <Todo todo={todo}/>)}
+                {todos.map(todo => <Todo todo={todo} key={todo.id}/>)}
             </div>
         </div>
     );
