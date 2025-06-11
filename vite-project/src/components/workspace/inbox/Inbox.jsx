@@ -1,8 +1,7 @@
 import React from 'react';
 import TopBar from "./TopBar.jsx";
-import CreateTodo from "./CreateTodo.jsx";
-import AllTasks from "../AllTasks.jsx";
-import AllTodos from "./AllTodos.jsx";
+import InboxTodo from "./InboxTodo.jsx";
+
 
 
 
@@ -17,8 +16,8 @@ const Inbox = () => {
     return (
         <div style={styles.container} onMouseEnter={() => setOnMouseEnter(true)} onMouseLeave={() => setOnMouseEnter(false)}>
             <TopBar onMouseEnter={onMouseEnter}/>
-            <CreateTodo/>
-            <AllTodos/>
+            <InboxTodo/>
+
         </div>
     );
 };
